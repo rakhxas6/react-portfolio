@@ -13,7 +13,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#projects" className="footer__link">
+            <a href="#portfolio" className="footer__link">
               Projects
             </a>
           </li>
@@ -57,8 +57,10 @@ const Footer = () => {
           >
             <i className="bx bxl-github"></i>
           </a>
-              </div>
-              <span className="footer__copy">&#169; Sudhan Kandel. All Rights Reserved. </span>
+        </div>
+        <span className="footer__copy">
+          &#169; Sudhan Kandel. All Rights Reserved.{" "}
+        </span>
       </div>
     </footer>
   );
