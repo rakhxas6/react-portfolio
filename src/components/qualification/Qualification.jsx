@@ -57,7 +57,7 @@ const Qualification = () => {
                   Butwal Multiple Campus, TU
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> 2019 AD - present
+                  <i className="uil uil-calender-alt"></i> 2019 AD - 2024 AD
                 </div>
               </div>
 
@@ -82,38 +82,7 @@ const Qualification = () => {
                 </div>
               </div>
             </div>
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">BSc.CSIT</h3>
-                <span className="qualification__subtitle">
-                  Butwal Multiple Campus, TU
-                </span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> 2019 AD - present
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">+2 Science</h3>
-                <span className="qualification__subtitle">
-                  Oxford Secondary School, NEB
-                </span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> 2017 AD - 2019 AD
-                </div>
-              </div>
-            </div>
+          
           </div>
           <div
             className={
