@@ -84,34 +84,18 @@ const Qualification = () => {
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">BSc.CSIT</h3>
+                <h3 className="qualification__title">School Level</h3>
                 <span className="qualification__subtitle">
-                  Butwal Multiple Campus, TU
+                  Shree Nawaratna Secondary School
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> 2019 AD - present
+                  <i className="uil uil-calender-alt"></i> 2010 AD - 2017 AD
                 </div>
               </div>
 
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
-              </div>
-            </div>
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">+2 Science</h3>
-                <span className="qualification__subtitle">
-                  Oxford Secondary School, NEB
-                </span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> 2017 AD - 2019 AD
-                </div>
               </div>
             </div>
           </div>
@@ -124,12 +108,12 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">BSc.CSIT</h3>
+                <h3 className="qualification__title">Mern Stack Developer</h3>
                 <span className="qualification__subtitle">
-                  Butwal Multiple Campus, TU
+                  Himal Creations Pvt. Ltd.
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> 2019 AD - present
+                  <i className="uil uil-calender-alt"></i> 2023 AD - 2024 AD
                 </div>
               </div>
 
@@ -145,23 +129,26 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">+2 Science</h3>
+                <h3 className="qualification__title">
+                  Frontend Web Development (React.js)
+                </h3>
                 <span className="qualification__subtitle">
-                  Oxford Secondary School, NEB
+                  Aarawan Tech Pvt. Ltd.
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> 2017 AD - 2019 AD
+                  <i className="uil uil-calender-alt"></i> October 24, 2024 -
+                  February 24, 2025
                 </div>
               </div>
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">BSc.CSIT</h3>
+                <h3 className="qualification__title">Graphic Designer</h3>
                 <span className="qualification__subtitle">
-                  Butwal Multiple Campus, TU
+                  Thapa Photo Studio
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> 2019 AD - present
+                  <i className="uil uil-calender-alt"></i> 2022 AD - 2025 AD
                 </div>
               </div>
 
