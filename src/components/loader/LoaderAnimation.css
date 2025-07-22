@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+.loader-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+    padding: 1rem;
+    text-align: center;
+}
+
+.loader-container.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.15rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 20%);
+}
+
+.greeting-text {
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* ✅ Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .loader {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .loader {
+        font-size: 1.5rem;
+    }
+}
