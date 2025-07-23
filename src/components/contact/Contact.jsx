@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import { toast, Toaster } from "react-hot-toast";
+import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
@@ -8,14 +10,43 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const name = form.current.name.value.trim();
+    const email = form.current.email.value.trim();
+    const message = form.current.message.value.trim();
+
+    if (!name || !email || !message) {
+      toast.error("Please fill in all the fields.");
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
     emailjs
-      .sendForm("service_lc1jn0b", "template_p1c89gf", form.current, {
-        publicKey: "mldE_QSKX6Dflk9Rh",
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(() => {
+        toast.success("Message sent successfully!");
       })
+      .catch((error) => {
+        toast.error("Failed to send message: " + error.text);
+      });
+
     e.target.reset();
   };
+
   return (
     <section className="contact section" id="contact">
+      <Toaster position="top-center" autoClose={3000} />
       <h2 className="section__title">Get in touch</h2>
       <span className="section__subtitle">Contact Me</span>
 
@@ -75,6 +106,7 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Write me your Message</h3>
 
+          {/* trying to test better comments */}
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>

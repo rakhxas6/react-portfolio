@@ -44,7 +44,7 @@ const Works = () => {
         {projects.length > 0 ? (
           projects.map((item) => <WorkItems item={item} key={item.id} />)
         ) : (
-          <p className="text-center col-span-full text-gray-500">
+          <p className=" work__not__found">
             No projects found.
           </p>
         )}
