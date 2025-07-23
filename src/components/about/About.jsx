@@ -2,7 +2,7 @@ import React from 'react'
 import "./about.css"
 import Info from './Info'
 import AboutImg from "../../assets/profile-pic.jpg"
-import CV from "../../assets/Sudhan-CV.pdf"
+import CV from "../../assets/Sudhan_Kandel _CV.pdf";
 
 const About = () => {
   return (
@@ -11,16 +11,18 @@ const About = () => {
       <span className="section__subtitle">My Introduction</span>
 
       <div className="about__container container grid">
-        <img src={AboutImg} alt="sudhan kandel" className="about__img" />
+        <img src={AboutImg} alt="sudhan kandel resume/CV" className="about__img" />
         <div className="about__data">
           <Info />
 
           <p className="about__description">
-            Frontend deceloper, I create web pages and website with UI/UX
-            interface, I have 1 year of experience and many clients are happy
-            with my projects carried out.
+            Creative Frontend Developer crafting engaging, responsive, and
+            user-friendly websites with a strong focus on UI/UX. With 1 year of
+            hands-on experience, I’ve delivered impactful projects that clients
+            love — turning ideas into seamless digital experiences.
           </p>
-          <a download="" href={CV} className="button button-flex">
+
+          <a download="" href={CV} className="button button--flex">
             Download CV
             <svg
               class="button__icon"

@@ -20,7 +20,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skills__name">Node and Express JS</h3>
-              <span className="skills__level">Basic</span>
+              <span className="skills__level">Intermediate</span>
             </div>
           </div>
 
@@ -29,7 +29,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skills__name">Firebase</h3>
-              <span className="skills__level">Basic</span>
+              <span className="skills__level">Intermediate</span>
             </div>
           </div>
         </div>

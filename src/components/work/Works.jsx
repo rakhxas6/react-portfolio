@@ -12,28 +12,26 @@ const Works = () => {
     if (item.name === "all") {
       setProjects(projectsData);
     } else {
-      const newProjects = projectsData.filter((projects) => {
-        return projects.category.toLowerCase() === item.name;
+      const newProjects = projectsData.filter((project) => {
+        return project.category.toLowerCase() === item.name;
       });
       setProjects(newProjects);
     }
   }, [item]);
 
   const handleClick = (e, index) => {
-    setItem({ name: e.target.textContent });
+    setItem({ name: e.target.textContent.toLowerCase() });
     setActive(index);
   };
+
   return (
     <div>
       <div className="work__filters">
         {projectsNav.map((item, index) => {
           return (
             <span
-              onClick={(e) => {
-                handleClick(e, index);
-                console.log(`i am ${item.name} cliicked.`)
-              }}
-              className={`${active === index ? "active-work" : " "} work__item`}
+              onClick={(e) => handleClick(e, index)}
+              className={`${active === index ? "active-work" : ""} work__item`}
               key={index}
             >
               {item.name}
@@ -41,10 +39,15 @@ const Works = () => {
           );
         })}
       </div>
+
       <div className="work__container container grid">
-        {projects.map((item) => {
-          return <WorkItems item={item} key={item.id} />;
-        })}
+        {projects.length > 0 ? (
+          projects.map((item) => <WorkItems item={item} key={item.id} />)
+        ) : (
+          <p className="text-center col-span-full text-gray-500">
+            No projects found.
+          </p>
+        )}
       </div>
     </div>
   );

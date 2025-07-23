@@ -6,7 +6,7 @@ const WorkItems = ({item}) => {
       <img src={item.image} alt="workimage" className="work__img" />
       <h3 className="work__title">{item.title}</h3>
       <a
-        href="https://github.com/rakhxas6"
+        href={item.demo}
         className="work__button"
         target="_blank"
         rel="noopener noreferrer"

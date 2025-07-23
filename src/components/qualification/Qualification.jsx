@@ -57,7 +57,7 @@ const Qualification = () => {
                   Butwal Multiple Campus, TU
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> 2019 AD - present
+                  <i className="uil uil-calender-alt"></i> 2019 AD - 2024 AD
                 </div>
               </div>
 

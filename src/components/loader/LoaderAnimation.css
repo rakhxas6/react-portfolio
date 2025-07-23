@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 .loader-container {
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +10,7 @@
     transition: opacity 0.6s ease-in-out;
     padding: 1rem;
     text-align: center;
+    overflow: hidden;
 }
 
 .loader-container.fade-out {
@@ -31,12 +32,12 @@
 /* ✅ Responsive adjustments */
 @media screen and (max-width: 768px) {
     .loader {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .loader {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 }
